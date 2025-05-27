@@ -1,34 +1,32 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
   <title>Cursos</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="static/assets/img/favicon.png" rel="icon" />
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-
+  <link href="static/assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -37,14 +35,14 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="{% url 'index' %}">APESEN</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">APESEN</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="{% url 'index' %}">Inicio</a></li>
-          <li><a href="{% url 'sobrenos' %}">Sobre Nosotros</a></li>
-          <li><a href="{% url 'cursos' %}">Cursos</a></li>
-          <li><a href="{% url 'profesores' %}">Profesores</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
 
           <li class="dropdown"><a href="#"><span>Idiomas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -54,21 +52,22 @@
               <li><a href="#">Francés</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'contacto' %}">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
           <li class="dropdown"><a href="#"><span>Cuenta</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-            <li><a href="{% url 'register' %}" class="get-started-btn">Registrarse</a></li>
-            <li><a href="{% url 'login' %}" class="get-started-btn">Ingresar</a></li>
+              <li><a href="register.html" class="get-started-btn">Registrarse</a></li>
+              <li><a href="login.html" class="get-started-btn">Ingresar</a></li>
             </ul>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
-      <a href="{% url 'cursos' %}" class="get-started-btn">Empezar</a>
-
+      <a href="cursos.html" class="get-started-btn">Empezar</a>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main" data-aos="fade-in">
 
@@ -76,9 +75,10 @@
     <div class="breadcrumbs">
       <div class="container">
         <h2>Cursos</h2>
-        <p> Los siguientes cursos estan disponibles dentro de nuestra plataforma, asegurate de revisarlos bien y elegir el que más te guste. </p>
+        <p>Los siguientes cursos están disponibles dentro de nuestra plataforma, asegúrate de revisarlos bien y elegir el que más te guste.</p>
       </div>
-    </div><!-- End Breadcrumbs -->
+    </div>
+    <!-- End Breadcrumbs -->
 
     <!-- ======= Courses Section ======= -->
     <section id="courses" class="courses">
@@ -88,81 +88,81 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-1.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-1.jpg" class="img-fluid" alt="Inglés I y II" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Inglés I y II</h4>
                   <p class="price">25.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Inglés I y II</a></h3>
+                <h3><a href="detalles_curso.html">Inglés I y II</a></h3>
                 <p>Domina el inglés con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-1.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="Antonio" />
                     <span>Antonio</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;50&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;65
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-2.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-2.jpg" class="img-fluid" alt="Español I y II" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Español I y II</h4>
                   <p class="price">50.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Español I y II</a></h3>
+                <h3><a href="detalles_curso.html">Español I y II</a></h3>
                 <p>Domina el español con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-2.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="Lana" />
                     <span>Lana</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;35&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;42
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-3.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-3.jpg" class="img-fluid" alt="Alemán" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Alemán</h4>
                   <p class="price">18.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Alemán I y II</a></h3>
+                <h3><a href="detalles_curso.html">Alemán I y II</a></h3>
                 <p>Domina el Alemán con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-3.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="Brandon" />
                     <span>Brandon</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;20
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;20&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;85
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
         </div>
 
@@ -173,88 +173,90 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-1.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-1.jpg" class="img-fluid" alt="Inglés III" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Inglés I y II</h4>
                   <p class="price">25.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Inglés III</a></h3>
+                <h3><a href="detalles_curso.html">Inglés III</a></h3>
                 <p>Domina el inglés con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-1.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="Antonio" />
                     <span>Antonio</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;50&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;65
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-2.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-2.jpg" class="img-fluid" alt="Español III" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Español I y II</h4>
                   <p class="price">50.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Español III</a></h3>
+                <h3><a href="detalles_curso.html">Español III</a></h3>
                 <p>Domina el español con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-2.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="Lana" />
                     <span>Lana</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;35&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;42
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
-              <img src="{% static 'assets/img/course-3.jpg' %}" class="img-fluid" alt="...">
+              <img src="static/assets/img/course-3.jpg" class="img-fluid" alt="Alemán III" />
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Alemán</h4>
                   <p class="price">18.000 CLP</p>
                 </div>
 
-                <h3><a href="{% url 'detalles_curso' %}">Alemán III</a></h3>
+                <h3><a href="detalles_curso.html">Alemán III</a></h3>
                 <p>Domina el Alemán con nuestro curso: práctico, efectivo y personalizado para tus metas lingüísticas.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'assets/img/trainers/trainer-3.jpg' %}" class="img-fluid" alt="">
+                    <img src="static/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="Brandon" />
                     <span>Brandon</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;20
-                    &nbsp;&nbsp;
+                    <i class="bx bx-user"></i>&nbsp;20&nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;85
                   </div>
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
+          <!-- End Course Item-->
 
         </div>
 
       </div>
-    </section><!-- End Courses Section -->
+    </section>
+    <!-- End Courses Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -263,63 +265,74 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h3>APESEN</h3>
             <p>
-              Calle Siempre Viva 3223<br>
-              Las Condes, STG 535022<br>
-              Chile <br><br>
-              <strong>Celular:</strong> +56 9 8765 4567<br>
-              <strong>Email:</strong> info@APESEN.com<br>
+              Calle 123, Ciudad<br />
+              Región, País<br /><br />
+              <strong>Teléfono:</strong> +56 9 1234 5678<br />
+              <strong>Email:</strong> info@apesen.com<br />
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Links Útiles</h4>
+            <h4>Links útiles</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'sobrenos' %}">Sobre Nosotros</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos de Servicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de Privacidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="sobrenos.html">Sobre Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="cursos.html">Cursos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="profesores.html">Profesores</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Idiomas</h4>
+            <h4>Servicios</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Inglés</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Español</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Alemán</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Francés</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Clases Presenciales</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cursos en Línea</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Clases Privadas</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Preparación de Exámenes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Apoyo Escolar</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Enterate de Todo!</h4>
-            <p>Te enviaremos links dando noticias y cosas de interes.</p>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Únete a nuestro boletín</h4>
+            <p>Recibe las últimas noticias y actualizaciones directamente en tu correo.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Suscribirse">
+              <input type="email" name="email" /><input type="submit" value="Suscribirse" />
             </form>
           </div>
 
         </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>APESEN</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Diseñado por <a href="#">Tu Empresa</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    ><i class="bi bi-arrow-up-short"></i
+  ></a>
 
   <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js' %}"></script>
-
+  <script src="static/assets/js/main.js"></script>
 </body>
 
 </html>

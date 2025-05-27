@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,23 +10,23 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="static/assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -37,14 +36,14 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="{% url 'index' %}">APESEN</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">APESEN</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="{% url 'index' %}">Inicio</a></li>
-          <li><a href="{% url 'sobrenos' %}">Sobre Nosotros</a></li>
-          <li><a href="{% url 'cursos' %}">Cursos</a></li>
-          <li><a href="{% url 'profesores' %}">Profesores</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
 
           <li class="dropdown"><a href="#"><span>Idiomas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -54,18 +53,18 @@
               <li><a href="#">Francés</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'contacto' %}">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
           <li class="dropdown"><a href="#"><span>Cuenta</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-            <li><a href="{% url 'register' %}" class="get-started-btn">Registrarse</a></li>
-            <li><a href="{% url 'login' %}" class="get-started-btn">Ingresar</a></li>
+              <li><a href="register.html" class="get-started-btn">Registrarse</a></li>
+              <li><a href="login.html" class="get-started-btn">Ingresar</a></li>
             </ul>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="{% url 'cursos' %}" class="get-started-btn">Empezar</a>
+      <a href="cursos.html" class="get-started-btn">Empezar</a>
 
     </div>
   </header><!-- End Header -->
@@ -80,13 +79,13 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Cource Details Section ======= -->
+    <!-- ======= Course Details Section ======= -->
     <section id="course-details" class="course-details">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
           <div class="col-lg-8">
-            <img src="assets/img/course-details.jpg" class="img-fluid" alt="">
+            <img src="static/assets/img/course-details.jpg" class="img-fluid" alt="">
             <h3>Ingles I y II</h3>
             <p>
               Nuestro curso de inglés te sumerge en una experiencia única donde la exploración del idioma se combina con el disfrute del aprendizaje. Con un enfoque interactivo y dinámico, descubrirás la belleza de comunicarte en inglés de manera fluida y efectiva. Desde las bases fundamentales hasta niveles más avanzados, te guiamos para que logres dominar este idioma de manera gradual y efectiva. Con un equipo de profesionales comprometidos y un ambiente propicio para el aprendizaje, te brindamos las herramientas necesarias para que alcances tus metas lingüísticas con confianza y destreza. ¡Únete a nosotros y descubre el placer de dominar el inglés!
@@ -118,10 +117,10 @@
         </div>
 
       </div>
-    </section><!-- End Cource Details Section -->
+    </section><!-- End Course Details Section -->
 
-    <!-- ======= Cource Details Tabs Section ======= -->
-    <section id="cource-details-tabs" class="cource-details-tabs">
+    <!-- ======= Course Details Tabs Section ======= -->
+    <section id="course-details-tabs" class="course-details-tabs">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -154,11 +153,11 @@
                     <p>Sumérgete en el idioma desde cero, explorando vocabulario y estructuras esenciales para comunicarte con confianza. Nuestro enfoque interactivo hace que aprender sea divertido y efectivo, proporcionándote las bases sólidas que necesitas para avanzar.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                    <img src="static/assets/img/course-details-tab-1.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
-              
+
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -167,11 +166,11 @@
                     <p>Practica y perfecciona tu inglés hablado a través de situaciones cotidianas y dinámicas interactivas. Desde debates hasta juegos de roles, este curso te ayuda a expresarte con fluidez y confianza en diversas situaciones sociales y profesionales.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                    <img src="static/assets/img/course-details-tab-2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
-          
+
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -180,11 +179,11 @@
                     <p>Explora las estructuras gramaticales avanzadas y perfecciona tu comprensión del inglés. Desde tiempos verbales hasta construcciones complejas, este curso te desafía a dominar los aspectos más sutiles del idioma para comunicarte con precisión y claridad.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                    <img src="static/assets/img/course-details-tab-3.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
-          
+
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -193,11 +192,11 @@
                     <p>Aprende a comunicarte efectivamente en situaciones empresariales. Desde redacción de correos electrónicos profesionales hasta presentaciones ejecutivas, este curso te prepara para triunfar en el mundo empresarial internacional con confianza y competencia.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                    <img src="static/assets/img/course-details-tab-4.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
-          
+
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -206,17 +205,17 @@
                     <p>Este curso intensivo te brinda las estrategias necesarias y la práctica enfocada para superar exámenes de certificación reconocidos internacionalmente. Domina técnicas de examen, amplía tu vocabulario y perfecciona tus habilidades para alcanzar el éxito.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    <img src="static/assets/img/course-details-tab-5.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </div>
-    </section><!-- End Cource Details Tabs Section -->
+    </section><!-- End Course Details Tabs Section -->
 
   </main><!-- End #main -->
 
@@ -241,10 +240,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Links Útiles</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'sobrenos' %}">Sobre Nosotros</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos de Servicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de Privacidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="sobrenos.html">Sobre Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="cursos.html">Cursos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="profesores.html">Profesores</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
 
@@ -259,30 +259,37 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Enterate de Todo!</h4>
-            <p>Te enviaremos links dando noticias y cosas de interes.</p>
+            <h4>Únete a nuestro Newsletter</h4>
+            <p>Recibe noticias y actualizaciones directamente en tu correo.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Suscribirse">
+              <input type="email" name="email" placeholder="Tu correo electrónico"><input type="submit" value="Suscribirse">
             </form>
           </div>
 
         </div>
       </div>
     </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>APESEN</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
   </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="static/assets/js/main.js"></script>
 
 </body>
 
