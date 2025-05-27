@@ -33,23 +33,38 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center">
 
-      <h1 class="logo"><a href="index.html">APESEN</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">APESEN</a></h1>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#courses">Cursos</a></li>
-          <li><a class="nav-link scrollto" href="#trainers">Profesores</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li class="dropdown"><a href="#"><span>Idiomas</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Inglés</a></li>
+              <li><a href="#">Español</a></li>
+              <li><a href="#">Alemán</a></li>
+              <li><a href="#">Francés</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li class="dropdown"><a href="#"><span>Cuenta</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="register.html" class="get-started-btn">Registrarse</a></li>
+              <li><a href="login.html" class="get-started-btn">Ingresar</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <a href="cursos.html" class="get-started-btn">Empezar</a>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
